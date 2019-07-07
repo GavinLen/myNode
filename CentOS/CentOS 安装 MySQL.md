@@ -38,6 +38,7 @@ log-error=/opt/mysql/logs/3306_err.log
 # 连接数据库
 > ./mysql -uroot -pRoot4510@ --socket=/opt/mysql/sock/3306.sock
 # 修改外网连接
+> use mysql
 > update user set host='%' where user='root';
 > flush privileges;
 ```

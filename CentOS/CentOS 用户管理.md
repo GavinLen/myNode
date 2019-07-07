@@ -1,4 +1,4 @@
-# CentOS--用户管理
+# CentOS--用户和组管理
 
 [TOC]
 
@@ -49,8 +49,35 @@ root:x:0:0:root:/root:/bin/bash
 (7) 用户的shell。除了/bin/bash外还有/sbin/nologin比较多，它表示不允许该账号登录，建立账号时添加-s选项指定第七段的值。
 ```
 
-### 1.2 
+### 1.2 创建账户与密码
+
+#### a. 创建用户
+
+```shell
+# 创建 es 用户
+> useradd es
+# 修改 es 密码
+> passwd es
+
+> useradd -g 
+```
+
+
+
+
+
+#### b. 设置密码
 
 ## 2. 用户组管理
 
-### 2.1 
+### 2.1 创建用户组
+
+```shell
+> groupadd elasticsearch
+```
+
+https://blog.csdn.net/github_39069288/article/details/73306489
+
+
+
+https://blog.csdn.net/github_39069288/article/category/6958589
